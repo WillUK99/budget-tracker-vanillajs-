@@ -234,14 +234,6 @@ class Budget {
 
 
 
-//Gets current day
-let curday = () => {
-    document.querySelector('.date').innerHTML = new Date().toDateString() + " :";
-}
-
-
-
-
 function eventListeners(){
     const submitForm = document.getElementById('submit-form')
     const incomeList = document.getElementById('income-list')
@@ -276,5 +268,3 @@ function eventListeners(){
 document.addEventListener('DOMContentLoaded', function(){
     eventListeners();
 })
-
-document.addEventListener('DOMContentLoaded', curday);
